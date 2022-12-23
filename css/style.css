@@ -142,6 +142,15 @@ body {
   color: var(--clr-primary-400);
 }
 
+p:not([class]) {
+  opacity: 0.7;
+  max-width: 32ch;
+}
+
+p[data-width="wide"] {
+  max-width: 100%;
+}
+
 /* button */
 
 .button {
@@ -266,7 +275,6 @@ body {
   .headshot-img {
     display: none;
   }
-
 }
 
 /* Utility classes */
@@ -384,4 +392,36 @@ body {
 /* Selects all children within a div _except_ the first child */
 :where(.block-flow :not(:first-child)) {
   margin-top: var(--flow-spacer, 1.8em);
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+.vertican-align-center {
+  align-items: center;
+}
+
+.cta {
+  position: relative;
+  isolation: isolate;
+  text-align: center;
+}
+
+@media (min-width: 50em) {
+  .cta {
+    text-align: left;
+  }
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image: url("/img/bg-tablet-pattern.svg"),
+    url("/img/bg-tablet-pattern.svg");
+  background-position: -15rem -5rem, 80rem -42rem;
+  background-repeat: no-repeat;
+  opacity: 0.1;
 }
