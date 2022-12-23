@@ -127,19 +127,6 @@ svg {
   }
 }
 
-.container {
-  --max-width: 1110px;
-  --padding: 1rem;
-
-  width: min(var(--max-width), 100% - (var(--padding) * 2));
-  margin-inline: auto;
-}
-
-.even-columns {
-  display: grid;
-  gap: 1rem;
-}
-
 @media (min-width: 50em) {
   .even-columns {
     grid-auto-flow: column;
@@ -232,7 +219,6 @@ body {
 @media (max-width: 50em) {
   .primary-navigation {
     display: none;
-
     position: fixed;
     padding: var(--size-700);
     inset: 7rem var(--size-400) auto;
@@ -276,6 +262,11 @@ body {
   .mobile-nav-toggle .icon-close {
     display: none;
   }
+
+  .headshot-img {
+    display: none;
+  }
+
 }
 
 /* Utility classes */
@@ -375,4 +366,22 @@ body {
 
 .headshot-img {
   border-radius: 10em;
+}
+
+.container {
+  --max-width: 1110px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Selects all children within a div _except_ the first child */
+:where(.block-flow :not(:first-child)) {
+  margin-top: var(--flow-spacer, 1.8em);
 }
