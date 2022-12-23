@@ -18,10 +18,13 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>
 
     <script>
       var renderPage = true;
@@ -159,12 +162,55 @@
         </div>
       </section>
 
-      <section class="projects-carousel padding-block-700">
-        <div class="container">
-          <h2 class="fs-secondary-heading">Projects carousel</h2>
-          <!-- Carousel here -->
-          <button class="button">View all projects</button>
-        </div>
+      <section class="carousel | padding-block-700  text-center">
+        <h2 class="fs-secondary-heading fw-bold">Projects</h2>
+        <!-- Carousel here -->
+        <ul class="slider">
+          <li>
+            <img src="img/metro-logo.png" alt="">
+  
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Metro Bank</h3>
+              <p data-width="wide">Part of a digital transformation program,
+                leading 8+ mobile developers building
+                greenfield iOS and Android apps.
+                Modern Android app architecture -</p>
+            </div>
+          </li>
+          <li>
+            <img src="img/clydesdale-logo.jpeg" alt="">
+  
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Clysdale Bank</h3>
+              <p data-width="wide">Led a cross-functional team of 10+ people,
+                building overdraft functionality into Metro's
+                Android and iOS apps
+                Responsible for ensuring</p>
+            </div>
+          </li>
+          <li>
+            <img src="img/raiffeisen-logo.png" alt="">
+  
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Raiffeisen Bank</h3>
+              <p data-width="wide">Part of a digital transformation program,
+                leading 8+ mobile developers building
+                greenfield iOS and Android apps.
+                Modern Android app architecture </p>
+            </div>
+          </li>
+          <li>
+            <img src="img/argyle-logo.png" alt="">
+  
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Argyle</h3>
+              <p data-width="wide">Supported the SDK team in building and maintaining Link, Argyle's
+                mobile SDK for Android, iOS, React and Flutter, and the supporting
+                backend services</p>
+            </div>
+          </li>
+        </ul>
+        <button class="button">All projects</button>
       </section>
 
       <section class="expertise-section padding-block-700">
@@ -190,7 +236,7 @@
             <div>
               <p class="fs-secondary-heading fw-bold">Because no portfolio would be complete without a contact area...</p>
             </div>
-            <div class="justify-self-end-md">
+            <div class="justify-self-end">
               <button class="button" data-type="inverted">Contact</button>
             </div>
           </div>
