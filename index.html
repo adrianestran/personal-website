@@ -1,274 +1,155 @@
 ---
+layout: default
+title: Adrian Estran's personal site
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <main>
+    <section class="padding-block-900">
+      <div class="container | block-flow">
+        <div class="even-columns">
+          <div>
+            <h1 class="fs-primary-heading fw-bold">
+              Engineering Manager & Android Developer
+            </h1>
+            <p>
+              I am passionate about supporting development teams to
+              deliver great products with a strong focus on sustainability and predictablity
+            </p>
+          </div>
 
-    <title>Career page for Adrian Estran</title>
-
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"
-    />
-    <!-- Google web font "Open Sans" -->
-    <link rel="stylesheet" href="css/fontawesome-all.min.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>
-
-    <script>
-      var renderPage = true;
-
-      if (
-        navigator.userAgent.indexOf("MSIE") !== -1 ||
-        navigator.appVersion.indexOf("Trident/") > 0
-      ) {
-        /* Microsoft Internet Explorer detected in. */
-        alert(
-          "Please view this in a modern browser such as Chrome or Microsoft Edge."
-        );
-        renderPage = false;
-      }
-    </script>
-  </head>
-
-  <body>
-    <header class="primary-header">
-      <div class="container">
-        <div class="nav-wrapper">
-          <a href="#"><img src="img/logo.png" alt="Manage" width="68%" /></a>
-          <button
-            class="mobile-nav-toggle"
-            aria-controls="primary-navigation"
-            aria-expanded="false"
-          >
-            <img
-              class="icon-hamburger"
-              src="img/icon-hamburger.svg"
-              alt=""
-              aria-hidden="true"
-            />
-            <img
-              class="icon-close"
-              src="img/icon-close.svg"
-              alt=""
-              aria-hidden="true"
-            />
-            <span class="visually-hidden">Menu</span>
-          </button>
-          <nav class="primary-navigation" id="primary-navigation">
-            <ul aria-label="Primary" role="list" class="nav-list">
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Writings</a></li>
-              <li><a href="#">Personal</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-          <button class="button | display-sm-none display-md-inline-flex">
-            <a class="cv-button" href="docs/cv.pdf" target="_blank">View my CV</a>
-          </button>
+          <div class="container">
+            <a href="#">
+              <img
+                class="headshot-img"
+                src="img/headshot.JPG"
+                alt="Manage"
+                width="40%"
+              />
+            </a>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="padding-block-900">
-        <div class="container | block-flow">
-          <div class="even-columns">
-            <div>
-              <h1 class="fs-primary-heading fw-bold">
-                Engineering Manager & Android Developer
-              </h1>
-              <p>
-                I am passionate about supporting development teams to
-                deliver great products with a strong focus on sustainability and predictablity
-              </p>
-            </div>
-
-            <div class="container">
-              <a href="#">
-                <img
-                  class="headshot-img"
-                  src="img/headshot.JPG"
-                  alt="Manage"
-                  width="40%"
-                />
-              </a>
-            </div>
+    <section class="padding-block-700">
+      <div class="container">
+        <div class="even-columns">
+          <div class="block-flow">
+            <h2 class="fs-secondary-heading fw-bold">Experience:</h2>
+            <p>
+              Engineering leader with 8+ years of hands-on technical
+              experience and 5+ years of management and leadership experience.
+              At Deloitte Digital I led cross-functional teams, and
+              collaborated across disciplines and domains to design, build and
+              operate award-winning digital products with massive scale for
+              household names in UK & EU consumer banking.
+            </p>
+            <p>
+              My most recent role with Argyle (Remote 1st, Series-B, SaaS
+              product) saw me leading the team responsible for building and
+              maintaining Argyle's mobile SDK across Android, iOS, React and
+              Flutter, as well as the supporting backend systems. Our stack
+              included Django, Spring, Java, Postgres, Kafka all running on
+              GCP.
+            </p>
           </div>
-        </div>
-      </section>
-
-      <section class="padding-block-700">
-        <div class="container">
-          <div class="even-columns">
-            <div class="block-flow">
-              <h2 class="fs-secondary-heading fw-bold">Experience:</h2>
-              <p>
-                Engineering leader with 8+ years of hands-on technical
-                experience and 5+ years of management and leadership experience.
-                At Deloitte Digital I led cross-functional teams, and
-                collaborated across disciplines and domains to design, build and
-                operate award-winning digital products with massive scale for
-                household names in UK & EU consumer banking.
-              </p>
-              <p>
-                My most recent role with Argyle (Remote 1st, Series-B, SaaS
-                product) saw me leading the team responsible for building and
-                maintaining Argyle's mobile SDK across Android, iOS, React and
-                Flutter, as well as the supporting backend systems. Our stack
-                included Django, Spring, Java, Postgres, Kafka all running on
-                GCP.
-              </p>
-            </div>
-            <div class="block-flow" id="expertise-content">
-              <h2 class="fs-secondary-heading fw-bold">Values</h2>
-              <ul class="numbered-items | flow" role="list">
-                <li>
-                  <div class="flow" style="--flow-spacer: 1em">
-                    <h3 class="fs-600 fw-bold">Trust</h3>
-                    <p data-width="wide">In the same way that modern societies are built on trust and social cohesion, I believe in the idea that the bedrock of any truly effective team is trust and transparency.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="flow" style="--flow-spacer: 1em">
-                    <h3 class="fs-600 fw-bold">Sustainability</h3>
-                    <p data-width="wide">I also believe in DDD (data driven delivery) and the idea that teams are happier when they deliver value frequently, and at a sustainable cadence. I have seen both of these things achieved through managing flow, capturing metrics and forecasting.</p>
-  
-                  </div>
-                </li>
-                <li>
-                  <div class="flow" style="--flow-spacer: 1em">
-                    <h3 class="fs-600 fw-bold">Ownership</h3>
-                    <p data-width="wide">I believe that teams should be given clear objectives and goals, and then be empowered to own how they will realise the end product.</p>
-  
-                  </div>
-                </li>
-              </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="carousel | padding-block-700  text-center">
-        <h2 class="fs-secondary-heading fw-bold">Projects</h2>
-        <!-- Carousel here -->
-        <ul class="slider">
-          <li>
-            <img src="img/metro-logo.png" alt="">
-  
-            <div class="slider-content | flow" style="--flow-spacer: 1rem">
-              <h3 class="fw-bold">Metro Bank</h3>
-              <p data-width="wide">Part of a digital transformation program,
-                leading 8+ mobile developers building
-                greenfield iOS and Android apps.
-                Modern Android app architecture -</p>
-            </div>
-          </li>
-          <li>
-            <img src="img/clydesdale-logo.jpeg" alt="">
-  
-            <div class="slider-content | flow" style="--flow-spacer: 1rem">
-              <h3 class="fw-bold">Clysdale Bank</h3>
-              <p data-width="wide">Led a cross-functional team of 10+ people,
-                building overdraft functionality into Metro's
-                Android and iOS apps
-                Responsible for ensuring</p>
-            </div>
-          </li>
-          <li>
-            <img src="img/raiffeisen-logo.png" alt="">
-  
-            <div class="slider-content | flow" style="--flow-spacer: 1rem">
-              <h3 class="fw-bold">Raiffeisen Bank</h3>
-              <p data-width="wide">Part of a digital transformation program,
-                leading 8+ mobile developers building
-                greenfield iOS and Android apps.
-                Modern Android app architecture </p>
-            </div>
-          </li>
-          <li>
-            <img src="img/argyle-logo.png" alt="">
-  
-            <div class="slider-content | flow" style="--flow-spacer: 1rem">
-              <h3 class="fw-bold">Argyle</h3>
-              <p data-width="wide">Supported the SDK team in building and maintaining Link, Argyle's
-                mobile SDK for Android, iOS, React and Flutter, and the supporting
-                backend services</p>
-            </div>
-          </li>
-        </ul>
-        <button class="button">All projects</button>
-      </section>
-
-      <section class="expertise-section padding-block-700">
-        <div class="container">
-          <h2 class="fs-secondary-heading">Expertise</h2>
-          <p>I am skilled in xxx, bbb, ccc.</p>
-          <!-- Expertise -->
-        </div>
-      </section>
-
-      <section class="writings-section padding-block-700">
-        <div class="container">
-          <h2 class="fs-secondary-heading">Writings</h2>
-          <ul>
-            {% for post in site.posts %}
+          <div class="block-flow" id="expertise-content">
+            <h2 class="fs-secondary-heading fw-bold">Values</h2>
+            <ul class="numbered-items | flow" role="list">
               <li>
-                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                {{ post.excerpt }}
+                <div class="flow" style="--flow-spacer: 1em">
+                  <h3 class="fs-600 fw-bold">Trust</h3>
+                  <p data-width="wide">In the same way that modern societies are built on trust and social cohesion, I believe in the idea that the bedrock of any truly effective team is trust and transparency.</p>
+                </div>
               </li>
-            {% endfor %}
-          </ul>
-          <button class="button">View all writings</button>
-        </div>
-      </section>
+              <li>
+                <div class="flow" style="--flow-spacer: 1em">
+                  <h3 class="fs-600 fw-bold">Sustainability</h3>
+                  <p data-width="wide">I also believe in DDD (data driven delivery) and the idea that teams are happier when they deliver value frequently, and at a sustainable cadence. I have seen both of these things achieved through managing flow, capturing metrics and forecasting.</p>
 
-      <section class="cta | padding-block-700 bg-accent-400 text-neutral-100">
-        <div class="container">
-          <div class="even-columns | vertican-align-center">
-            <div>
-              <p class="fs-secondary-heading fw-bold">Because no portfolio would be complete without a contact area...</p>
-            </div>
-            <div class="justify-self-end">
-              <button class="button" data-type="inverted">Contact</button>
-            </div>
+                </div>
+              </li>
+              <li>
+                <div class="flow" style="--flow-spacer: 1em">
+                  <h3 class="fs-600 fw-bold">Ownership</h3>
+                  <p data-width="wide">I believe that teams should be given clear objectives and goals, and then be empowered to own how they will realise the end product.</p>
+
+                </div>
+              </li>
+            </ul>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <footer class="bg-neutral-900 text-neutral-100">
-        <div class="container">
-          <div class="even-columns">
-            <div>
-              <ul role="list" aria-label="Social links">
-                <li><a aria-label="linkedin" href="#"></a>LinkedIn</li>
-                <li><a aria-label="github" href="#"></a>Github</li>
-                <li><a aria-label="instagram" href="#"></a>Instagram</li>
-              </ul>
-            </div>
-            <div>
-                <p>Created by Adrian Estran</p>
-            </div>
+    <section class="carousel | padding-block-700  text-center">
+      <h2 class="fs-secondary-heading fw-bold">Projects</h2>
+      <!-- Carousel here -->
+      <ul class="slider">
+        <li>
+          <img src="img/metro-logo.png" alt="">
+
+          <div class="slider-content | flow" style="--flow-spacer: 1rem">
+            <h3 class="fw-bold">Metro Bank</h3>
+            <p data-width="wide">Part of a digital transformation program,
+              leading 8+ mobile developers building
+              greenfield iOS and Android apps.
+              Modern Android app architecture -</p>
           </div>
-        </div>
-      </footer>
-    </main>
+        </li>
+        <li>
+          <img src="img/clydesdale-logo.jpeg" alt="">
 
-    <script type="module" src="js/main.js"></script>
-  </body>
-</html>
+          <div class="slider-content | flow" style="--flow-spacer: 1rem">
+            <h3 class="fw-bold">Clysdale Bank</h3>
+            <p data-width="wide">Led a cross-functional team of 10+ people,
+              building overdraft functionality into Metro's
+              Android and iOS apps
+              Responsible for ensuring</p>
+          </div>
+        </li>
+        <li>
+          <img src="img/raiffeisen-logo.png" alt="">
+
+          <div class="slider-content | flow" style="--flow-spacer: 1rem">
+            <h3 class="fw-bold">Raiffeisen Bank</h3>
+            <p data-width="wide">Part of a digital transformation program,
+              leading 8+ mobile developers building
+              greenfield iOS and Android apps.
+              Modern Android app architecture </p>
+          </div>
+        </li>
+        <li>
+          <img src="img/argyle-logo.png" alt="">
+
+          <div class="slider-content | flow" style="--flow-spacer: 1rem">
+            <h3 class="fw-bold">Argyle</h3>
+            <p data-width="wide">Supported the SDK team in building and maintaining Link, Argyle's
+              mobile SDK for Android, iOS, React and Flutter, and the supporting
+              backend services</p>
+          </div>
+        </li>
+      </ul>
+      <button class="button">All projects</button>
+    </section>
+
+    <section class="writings-section padding-block-700">
+      <div class="container">
+        <h2 class="fs-secondary-heading">Writings</h2>
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+              {{ post.excerpt }}
+            </li>
+          {% endfor %}
+        </ul>
+        <button class="button">View all writings</button>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <script type="module" src="js/main.js"></script>

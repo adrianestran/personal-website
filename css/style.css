@@ -496,7 +496,6 @@ p[data-width="wide"] {
   position: relative;
   top: calc(var(--size-800) / 2);
   margin-inline: auto;
-  border-radius: 10em;
 }
 .a11y-slider-dots {
   display: flex;
