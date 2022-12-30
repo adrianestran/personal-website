@@ -1,0 +1,9 @@
+<nav class="primary-navigation" id="primary-navigation">
+    <ul aria-label="Primary" role="list" class="nav-list">
+      <li><a href="/" {% if page.url == "/" %}style="color: red;"{% endif %}>Home</a></li>
+      <li><a href="/about.html" {% if page.url == "/about.html" %}style="color: red;"{% endif %}>About</a></li>
+      <li><a href="/writing.html" {% if page.url == "/writing.html" %}style="color: red;"{% endif %}>Writing</a></li>
+      <li><a href="/contact.html" {% if page.url == "/contact.html" %}style="color: red;"{% endif %}>Contact</a></li>
+    </ul>
+</nav>
+
