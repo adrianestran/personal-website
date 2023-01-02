@@ -34,8 +34,8 @@ title: Adrian Estran's personal site
       <div class="container">
         <div class="even-columns">
           <div class="block-flow">
-            <h2 class="fs-secondary-heading fw-bold">Experience:</h2>
-            <p>
+            <h2 class="fs-secondary-heading fw-bold">Experience</h2>
+            <p data-width="wider">
               Engineering leader with 8+ years of hands-on technical
               experience and 5+ years of management and leadership experience.
               At Deloitte Digital I led cross-functional teams, and
@@ -43,7 +43,7 @@ title: Adrian Estran's personal site
               operate award-winning digital products with massive scale for
               household names in UK & EU consumer banking.
             </p>
-            <p>
+            <p data-width="wider">
               My most recent role with Argyle (Remote 1st, Series-B, SaaS
               product) saw me leading the team responsible for building and
               maintaining Argyle's mobile SDK across Android, iOS, React and
@@ -76,7 +76,7 @@ title: Adrian Estran's personal site
                 </div>
               </li>
             </ul>
-              </li>
+          
             </ul>
           </div>
         </div>
@@ -134,20 +134,21 @@ title: Adrian Estran's personal site
       <button class="button">All projects</button>
     </section>
 
-    <section class="writings-section padding-block-700">
-      <div class="container">
-        <h2 class="fs-secondary-heading">Writings</h2>
-        <ul>
-          {% for post in site.posts %}
-            <li>
-              <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-              {{ post.excerpt }}
-            </li>
-          {% endfor %}
-        </ul>
-        <button class="button">View all writings</button>
-      </div>
+    <section class="carousel | padding-block-900  text-center">
+      <h2 class="fs-secondary-heading fw-bold">Writing</h2>
+      <!-- Carousel here -->
+      <ul class="slider">
+        {% for post in site.posts %}
+        <li>
+          <img src="assets/images/metro-logo.png" alt="">
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold" href="{{ post.url }}">{{ post.title }}</h3>
+              <p data-width="wide">{{ post.excerpt }}</p>
+            </div>
+        </li>
+        {% endfor %}
+      </ul>
+      <button class="button">All writing</button>
     </section>
-
     
   </main>

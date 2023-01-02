@@ -152,6 +152,10 @@ p[data-width="wide"] {
   max-width: 100%;
 }
 
+p[data-width="wider"] {
+  max-width: 90%;
+}
+
 /* button */
 
 .button {
